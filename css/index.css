@@ -169,3 +169,6 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.testimonials {
+  display: flex;
+}
