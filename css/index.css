@@ -172,3 +172,6 @@ img {
 .testimonials {
   display: flex;
 }
+.testimonials h3 {
+  text-transform: uppercase;
+}
