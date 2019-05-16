@@ -165,13 +165,41 @@ img {
   height: auto;
 }
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
+header {
+  display: block;
+}
 .testimonials {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #00CBD1;
 }
 .testimonials h3 {
   text-transform: uppercase;
+  color: #fff;
+  font-size: 1.9rem;
+  padding-bottom: 158px;
+}
+.testimonials .testimonial_content {
+  padding: 50px 142px 0 142px;
+}
+.testimonials .student_testimonials {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.testimonials .student_testimonials img {
+  max-width: 100%;
+}
+.testimonials .student {
+  border: 1px solid red;
+  width: 140px;
+}
+.testimonials .student p {
+  color: #fff;
 }

@@ -1,9 +1,53 @@
 // Testimonials Section
+@teal: #00CBD1;
+@white: #fff;
 
 .testimonials {
+  // border: 1px solid red;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: @teal;
 
   h3{
     text-transform: uppercase;
+    color: @white;
+    font-size: 1.9rem;
+    padding-bottom: 158px;
+  }
+
+  .testimonial_content{
+    padding: 50px 142px 0 142px;
+  }
+  .student_testimonials{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    img {
+      max-width: 100%;
+    }
+
+    .book_desc{
+
+    }
+  }
+
+  .student{
+    border: 1px solid red;
+    width: 140px;
+
+    p{
+      color: @white;
+    }
+  }
+
+  .break{
+    // flex-basis: 100%;
+  }
+
+  .book-desc{
+
   }
 }
