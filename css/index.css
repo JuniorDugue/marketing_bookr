@@ -129,45 +129,79 @@ table {
 * {
   box-sizing: border-box;
 }
-html {
-  font-size: 62.5%;
-}
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  font-family: 'Merriweather', serif;
+  font-size: 62.5%;
 }
 h1,
 h2,
 h3,
 h4,
-h5,
-nav {
-  font-family: 'Indie Flower', cursive;
-}
-h1 {
-  font-size: 4rem;
-}
-h2 {
-  font-size: 3.2rem;
-  padding-bottom: 10px;
-}
-h4 {
-  font-size: 2.5rem;
-  padding-bottom: 10px;
-}
-p {
-  line-height: 1.5;
-  font-size: 1.6rem;
-  padding-bottom: 10px;
-}
-img {
-  max-width: 100%;
-  height: auto;
+h5 {
+  font-family: 'Fira Sans', sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 .container {
-  max-width: 1100px;
-  width: 100%;
+  width: 90%;
+  /* TB LR */
   margin: 0 auto;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header nav a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+}
+header nav a:hover {
+  color: #00CBD1;
+  background: white;
+}
+header .navButtons button {
+  margin-left: 10px;
+  padding: 6px;
+  font-size: 1.3rem;
+  background: #00CBD1;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+header .navButtons button:hover {
+  background: white;
+  color: #00CBD1;
+}
+header .topContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .topContent .topImg {
+  width: 300px;
+  height: 400px;
+  margin-top: 5%;
+}
+header .topContent h1 {
+  font-size: 3rem;
+  color: #00CBD1;
+}
+header .topContent button {
+  font-size: 2rem;
+  background: white;
+  padding-left: 6%;
+  padding-right: 6%;
+  border: 2px solid #00CBD1;
+  cursor: pointer;
+}
+header .topContent button:hover {
+  background: #00CBD1;
+  color: white;
 }
 .testimonials {
   display: flex;
