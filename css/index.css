@@ -145,13 +145,6 @@ h5 {
   margin-bottom: 15px;
 }
 .container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-}
-header {
-  display: block;
-=======
   width: 90%;
   /* TB LR */
   margin: 0 auto;
