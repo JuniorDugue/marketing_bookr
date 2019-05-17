@@ -204,35 +204,57 @@ header .topContent button:hover {
   color: white;
 }
 .testimonials {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background: #00CBD1;
+  position: relative;
 }
 .testimonials h3 {
   text-transform: uppercase;
   color: #fff;
-  font-size: 1.9rem;
-  padding-bottom: 158px;
+  font-size: 3.6rem;
+  padding-top: 48px;
+  padding-bottom: 146px;
+  text-align: center;
 }
 .testimonials .testimonial_content {
-  padding: 50px 142px 0 142px;
+  margin: 50px 142px 0 142px;
 }
 .testimonials .student_testimonials {
-  border: 1px solid red;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 2fr));
+  grid-gap: 1%;
+  justify-items: center;
 }
 .testimonials .student_testimonials img {
-  max-width: 100%;
+  width: 100%;
 }
 .testimonials .student {
-  border: 1px solid red;
-  width: 140px;
+  width: 150px;
+}
+.testimonials .student img {
+  padding-bottom: 17px;
+  cursor: pointer;
 }
 .testimonials .student p {
   color: #fff;
   font-size: 1.6rem;
+  padding-top: 20.4px;
+}
+.testimonials .student .star {
+  color: goldenrod;
+  font-size: 2rem;
+  padding: 0.1rem;
+  /*space out the stars*/
+  cursor: pointer;
+}
+.testimonials .student .star::before {
+  content: '\2606';
+  /*star outline*/
+}
+.testimonials img.testimonial_book {
+  width: 5%;
+  padding-top: 50px;
+  right: -1050px;
 }
