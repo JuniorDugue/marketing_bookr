@@ -224,8 +224,8 @@ header .topContent button:hover {
 }
 .testimonials .student_testimonials {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 2fr));
-  grid-gap: 1%;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 5px;
   justify-items: center;
 }
 .testimonials .student_testimonials img {
