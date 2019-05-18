@@ -1,0 +1,71 @@
+h3{
+  font-size: 3.6rem;
+  color: @pink;
+
+  .bold{
+    font-weight: bold;
+  }
+}
+
+h4{
+  font-size: 3.2rem;
+}
+
+h3, h4 {
+  margin-top: 50px;
+}
+.rent_form{
+  margin-top: 50px;
+  form{
+    display: inline-flex;
+    justify-content: center;
+    width: 90%;
+    border-radius: 0.2em;
+    // position: relative;
+    // top: 250px;
+    // left: 10%;
+
+    input[type=search]{
+      width: 60%;
+      padding: 16px;
+      border-radius: 0.2em 0 0 0.2em; 
+    }
+
+    button{
+      border: none;
+      width: 70px;
+      background-color: @white;
+      border-radius: 0  0.2em 0 0.2em 0;
+      cursor: pointer;
+
+      &:hover {
+        background: @teal;
+      }
+    }
+  }
+
+  input{
+    border: 1px solid black;
+
+  }
+}
+
+.math_books{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+  margin-top: 50px;
+
+  li{
+    display: grid;
+  }
+}
+
+.center-text{
+  text-align: center;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
