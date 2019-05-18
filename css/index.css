@@ -217,7 +217,6 @@ header .topContent button:hover {
   font-size: 3.6rem;
   padding-top: 48px;
   padding-bottom: 146px;
-  text-align: center;
 }
 .testimonials .testimonial_content {
   margin: 50px 142px 0 142px;
@@ -258,6 +257,17 @@ header .topContent button:hover {
   width: 5%;
   padding-top: 50px;
   right: -1050px;
+}
+.math_books {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 20px;
+}
+.math_books li {
+  display: grid;
+}
+.center-text {
+  text-align: center;
 }
 .contactPage {
   background: linear-gradient(164deg, #ffffff 15%, #00cbd1 15%);
