@@ -57,6 +57,25 @@ const mathImageOpen = image => {
     })
   }
 
+
+// images animating on scroll
+const mathImages = document.querySelectorAll(".math_img");
+
+window.onscroll = function() {
+  const scroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+  for (var l=0; l<mathImages.length; l++){
+    if (scroll >= 120){
+      mathImages[l].classList.remove("down");
+      mathImages[l].classList.add("up");
+    }
+    else{
+      mathImages[l].classList.add("down");
+      mathImages[l].classList.remove("up");
+    }
+  }
+}
+
 typingH3(); 
 typingH4();
 onMathImageClick();
