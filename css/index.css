@@ -303,10 +303,44 @@ h4 {
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 20px;
   justify-items: center;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 .math_books li {
   display: grid;
+}
+.math_books li img {
+  display: block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.math_books li img:hover {
+  transform: scale(1.2);
+}
+.math-backdrop {
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 999999;
+  justify-content: center;
+  align-items: center;
+}
+.math-backdrop span.math-backdrop-close {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 20px;
+  right: 20x;
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+  color: #fff;
+  border: solid 1px #fff;
+  border-radius: 100%;
+  cursor: pointer;
 }
 .center-text {
   text-align: center;
