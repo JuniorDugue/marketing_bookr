@@ -1,44 +1,46 @@
 <!DOCTYPE html>
-
 <html lang="en" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-        <title>Contact Us</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="css/index.css" />
-        <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather" rel="stylesheet">
-  </head>
-  <body>
-      <div class="container contactPage">
-          <header>
-            <nav class="contactNav">
-                <img src="assets/img/logo.png" alt="">
-                <a href="index.html">Home</a>
-                <a href="">Rent/Buy</a>
-                <a href="">About Us</a>
-                <a href="">Contact</a>  
-               
-            </nav>
-        </header>
-        <section class="contact">
-            <img class="contactImg" src="../assets/img/contactImage.png" alt="">
-            <div class="contactForm">
-                    
-                <form action="">
-                    <h1>Contact Us</h1>
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your first name..">
-    
-                    <label for="lname">Last Name</label>
-                    <input type="text" name="lastname" id="lname" placeholder="Your last name..">
-    
-                    <label for="subject">Subject</label>
-                    <textarea name="subject" id="subject" style="height:400px" >Write something..</textarea>
-    
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-        </section>
-      </div>
+        <head>
+                <meta charset="utf-8">
+                <title>Bookr</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+                <link rel="stylesheet" href="css/index.css" />
+                <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather" rel="stylesheet">
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+          </head>
+  <body >
+    <div class="container contactPage">
+     <header>
+        <nav >
+            <img class="logo" src="assets/img/logo.png" alt="">
+            <a href="index.html">Home</a>
+            <a href="rentbuy.html">Rent/Buy</a>
+            <a href="">About Us</a>
+            <a href="contact.html">Contact</a>  
+        </nav>
+     </header>
+    <section class="contact">
+        <img class="contactImg" src="assets/img/contactImage.png" alt="">
+        <div class="contactForm">
+                
+            <form action="">
+                <h1>Contact Us</h1>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" name="lastname" id="lname" placeholder="Your last name..">
+
+                <label for="subject">Subject</label>
+                <textarea name="subject" id="subject" style="height:300px" >Write something..</textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+    </div>  
+
   </body>
 </html>
