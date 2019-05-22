@@ -153,54 +153,107 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  transition: 0.5s;
+  width: 100%;
+}
+header nav .logo {
+  padding-top: 1%;
+  transition: 0.5s;
+}
+@media (max-width: 750px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 }
 header nav a {
-  font-size: 1.4rem;
+  font-size: 2rem;
   text-decoration: none;
   color: black;
+  position: relative;
+  padding: 10px 20px;
+  transition: 0.5s;
+}
+@media (max-width: 750px) {
+  header nav a {
+    font-size: 2rem;
+    margin-top: 3%;
+  }
 }
 header nav a:hover {
-  color: #00CBD1;
-  background: white;
+  color: black;
+  background: #00CBD1;
+  text-decoration: none;
+  border-radius: 5px;
 }
-header .navButtons button {
-  margin-left: 10px;
-  padding: 6px;
-  font-size: 1.4rem;
+header nav a:last-child {
+  border-right: none;
+}
+header nav .navButtons button {
+  margin: 0 auto;
+  font-size: 2rem;
   background: #00CBD1;
   color: white;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
 }
-header .navButtons button:hover {
+header nav .navButtons button:hover {
   background: white;
   color: #00CBD1;
 }
-header .topContent {
+@media (max-width: 750px) {
+  header nav .navButtons button {
+    display: none;
+  }
+}
+.topContent {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-header .topContent .topImg {
+@media (max-width: 750px) {
+  .topContent {
+    border-top: 1.5px solid black;
+  }
+}
+.topContent .topImg {
   width: 300px;
   height: 400px;
   margin-top: 3%;
   margin-bottom: 3%;
+  transition: 0.5s;
 }
-header .topContent h1 {
+@media (max-width: 750px) {
+  .topContent .topImg {
+    display: none;
+  }
+}
+.topContent .content h1 {
   font-size: 3rem;
   color: #00CBD1;
+  transition: 0.5s;
 }
-header .topContent button {
+@media (max-width: 750px) {
+  .topContent .content .topButton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+  }
+}
+.topContent .content .topButton button {
   font-size: 2rem;
   background: white;
   padding-left: 6%;
   padding-right: 6%;
   border: 2px solid #00CBD1;
   cursor: pointer;
+  transition: 0.5s;
 }
-header .topContent button:hover {
+.topContent .content .topButton button:hover {
   background: #00CBD1;
   color: white;
 }
@@ -353,7 +406,7 @@ h4 {
   text-transform: uppercase;
 }
 .contactPage {
-  background: linear-gradient(164deg, #ffffff 15%, #00cbd1 15%);
+  background: linear-gradient(165deg, #ffffff 36%, #00cbd1 36%);
 }
 .contactNav {
   display: flex;
@@ -372,13 +425,15 @@ h4 {
   margin-right: 3%;
   margin-left: 3%;
   margin-top: 4%;
+  transition: 0.5s;
 }
 .contact .contactForm {
   display: flex;
 }
 .contact .contactForm h1 {
   font-size: 3rem;
-  color: white;
+  color: black;
+  transition: 0.5s;
 }
 .contact .contactForm input[type=text],
 .contact .contactForm textarea {
@@ -389,7 +444,7 @@ h4 {
 }
 .contact .contactForm input[type=submit] {
   background-color: #4CAF50;
-  color: white;
+  color: black;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -400,5 +455,5 @@ h4 {
 }
 .contact .contactForm label {
   font-size: 1.5rem;
-  color: white;
+  color: black;
 }
