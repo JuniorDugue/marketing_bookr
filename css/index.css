@@ -305,20 +305,32 @@ h4 {
 .math_books {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 20px;
+  grid-gap: 5em;
+  grid-auto-rows: minmax(100px, auto);
   justify-items: center;
+  align-content: center;
+  align-items: center;
   margin-top: 70px;
 }
 .math_books li {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+  justify-items: center;
+  align-content: center;
+  align-items: center;
 }
 .math_books li img {
   display: block;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-bottom: 20px;
 }
 .math_books li img:hover {
   transform: scale(1.2);
+}
+.math_books li p {
+  font-size: 2.6em;
 }
 .math-backdrop {
   position: fixed;
