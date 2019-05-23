@@ -356,6 +356,11 @@ header nav .navButtons button:hover {
   padding: 16px;
   border-radius: 0.2em 0 0 0.2em;
 }
+@media (max-width: 750px) {
+  .rent_form form input[type=search] {
+    width: 80%;
+  }
+}
 .rent_form form button {
   border: none;
   width: 70px;
