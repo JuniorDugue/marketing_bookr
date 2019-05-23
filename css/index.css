@@ -271,6 +271,9 @@ header nav .navButtons button:hover {
   padding-top: 48px;
   padding-bottom: 50px;
 }
+.testimonials #h4Text {
+  font-size: 9em;
+}
 .testimonials .testimonial_content {
   margin: 50px 142px 0 142px;
 }
@@ -282,6 +285,7 @@ header nav .navButtons button:hover {
 }
 .testimonials .student_testimonials img {
   width: 100%;
+  max-width: 100%;
 }
 .testimonials .student {
   width: 150px;
@@ -306,27 +310,36 @@ header nav .navButtons button:hover {
   content: '\2606';
   /*star outline*/
 }
+.testimonials .student .star.rated::before {
+  content: '\2605';
+  /*filled star*/
+}
+.testimonials .student .stars {
+  counter-reset: rateme 0;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.testimonials .student .star.rated {
+  counter-increment: rateme 1;
+}
+.testimonials .student .stars::after {
+  content: counter(rateme) '/5';
+}
 .testimonials img.testimonial_book {
   width: 5%;
   padding-top: 50px;
   right: -1050px;
 }
-.rentbuy {
-  width: 1200px;
-  max-width: 100%;
-}
-h3 {
-  font-size: 3.6rem;
+.h3 {
+  font-size: 3.6rem !important;
   color: #FF2A52;
+  margin-top: 70px;
 }
-h3 .bold {
+.h3 .bold {
   font-weight: bold;
 }
-h4 {
+#h4Text {
   font-size: 3.2rem;
-}
-h3,
-h4 {
   margin-top: 70px;
 }
 .rent_form {
@@ -358,7 +371,7 @@ h4 {
 }
 .math_books {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
   grid-gap: 5em;
   grid-auto-rows: minmax(100px, auto);
   justify-items: center;
@@ -369,13 +382,15 @@ h4 {
 .math_books li {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(200px, auto);
   justify-items: center;
   align-content: center;
   align-items: center;
 }
 .math_books li img {
   display: block;
+  max-width: 100%;
+  height: auto;
   cursor: pointer;
   transition: all 0.3s ease;
   margin-bottom: 20px;
@@ -385,6 +400,28 @@ h4 {
 }
 .math_books li p {
   font-size: 2.6em;
+  text-align: center;
+}
+.math_books li .button {
+  background: #FF2A52;
+  padding: 1em 2em;
+  color: #fff;
+  border: 0;
+  transition: 0.2s;
+}
+.math_books li .button:hover {
+  background: #fff;
+  color: #FF2A52;
+}
+.math_books li .modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.5);
 }
 .math-backdrop {
   position: fixed;

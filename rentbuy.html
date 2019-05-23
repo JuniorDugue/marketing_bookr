@@ -14,21 +14,20 @@
   <div class="container rentbuy">
     <header>
       <nav>
-
-        
-
         <img class="logo" src="assets/img/logo.png" alt="">
+        <a href="">Home</a>
 
-        <a href="index.html">Home</a>
         <a href="rentbuy.html">Rent/Buy</a>
         <a href="">About Us</a>
-        <a href="contact.html">Contact</a>  
-       
-            
+        <a href="contact.html">Contact</a> 
+        <div class="navButtons">
+            <button>Login</button>
+            <button>Sign Up</button>
+        </div> 
     </nav>
     </header>
 
-    <h3 class="center-text"><span class="bold">Rent or Buy</span><span id="h3Text"></span></h3>
+    <h3 class="center-text h3"><span class="bold">Rent or Buy</span><span id="h3Text"></span></h3>
 
     <div class="rent_form center-text">
       <form action="" class="center-text">   
@@ -44,9 +43,16 @@
           <div class="math_img">
             <img src="assets/img/math.png" alt="">
           </div>
-          <div class="caption">
+          <div class="caption center-text">
             <p>Henke's Med-Math</p>
-            <p><span class="uppercase">Total Price:</span>$132.99</p>
+            <p><span class="uppercase">Total Price:</span> $132.99</p>
+            <button id="modalBtn" class="button">Add</button>
+              <div id="simpleModal" class="modal">
+                <div class="modal-content">
+                  <span class="closeBtn">&times;</span>
+                  <p>Item has been added to your queue</p>
+                </div>
+              </div>
           </div>
         </li>
   
@@ -56,7 +62,7 @@
           </div>
           <div class="caption">
             <p>Math for Meds</p>
-            <p><span class="uppercase">Total Price:</span>$132.99</p>
+            <p><span class="uppercase">Total Price:</span> $132.99</p>
           </div>
         </li>
   
@@ -66,7 +72,7 @@
           </div>
           <div class="caption">
             <p>Facing an American Phobia</p>
-            <p><span class="uppercase">Total Price:</span>$129.99</p>
+            <p><span class="uppercase">Total Price:</span> $129.99</p>
           </div>
         </li>
   
@@ -76,7 +82,7 @@
           </div>
           <div class="caption">
             <p>Business Math</p>
-            <p><span class="uppercase">Total Price:</span>$114.99</p>
+            <p><span class="uppercase">Total Price:</span> $114.99</p>
           </div>
         </li>
 
@@ -86,7 +92,7 @@
           </div>
           <div class="caption">
             <p>The Nurse, The math, The Meds</p>
-            <p><span class="uppercase">Total Price:</span>$99.99</p>
+            <p><span class="uppercase">Total Price:</span> $99.99</p>
           </div>
         </li>
   
@@ -96,7 +102,7 @@
           </div>
           <div class="caption">
             <p>Math Lit</p>
-            <p><span class="uppercase">Total Price:</span>$2000.00</p>
+            <p><span class="uppercase">Total Price:</span> $2000.00</p>
           </div>
         </li>
   
@@ -106,7 +112,7 @@
           </div>
           <div class="caption">
             <p>Math Basics</p>
-            <p><span class="uppercase">Total Price:</span>$70.00</p>
+            <p><span class="uppercase">Total Price:</span> $70.00</p>
           </div>
         </li>
   
@@ -116,7 +122,7 @@
           </div>
           <div class="caption">
             <p>Math Study Skills Workbook</p>
-            <p><span class="uppercase">Total Price:</span>$150.99</p>
+            <p><span class="uppercase">Total Price:</span> $150.99</p>
           </div>
         </li>
 
@@ -126,7 +132,7 @@
         </div>
         <div class="caption">
           <p>Finite Math and Applied Calculus</p>
-          <p><span class="uppercase">Total Price:</span>$66.97</p>
+          <p><span class="uppercase">Total Price:</span> $66.97</p>
         </div>
       </li>
 
@@ -136,7 +142,7 @@
         </div>
         <div class="caption">
           <p>Business Math Using Excel</p>
-          <p><span class="uppercase">Total Price:</span>$199.99</p>
+          <p><span class="uppercase">Total Price:</span> $199.99</p>
         </div>
       </li>
 
@@ -146,7 +152,7 @@
         </div>
         <div class="caption">
           <p>Math Tools for Journalists</p>
-          <p><span class="uppercase">Total Price:</span>$213.46</p>
+          <p><span class="uppercase">Total Price:</span> $213.46</p>
         </div>
       </li>
 
@@ -156,10 +162,14 @@
         </div>
         <div class="caption">
           <p>Merchandising Math</p>
-          <p><span class="uppercase">Total Price:</span>$117.99</p>
+          <p><span class="uppercase">Total Price:</span> $117.99</p>
         </div>
       </li>
     </section>
+
+    <footer>
+      <p class="center-text"><i class="fa fa-copyright" aria-hidden="true"></i>Copyright 2019</p>
+    </footer>
   </div>
 
   <script src="components/rentbuy/rentbuy.js"></script>
