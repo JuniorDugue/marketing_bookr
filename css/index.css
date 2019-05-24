@@ -387,7 +387,7 @@ header nav .navButtons button:hover {
 .math_books li {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-auto-rows: minmax(200px, auto);
+  grid-auto-rows: minmax(250px, auto);
   justify-items: center;
   align-content: center;
   align-items: center;
@@ -419,6 +419,7 @@ header nav .navButtons button:hover {
   color: #FF2A52;
 }
 .math_books li .modal {
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -427,6 +428,34 @@ header nav .navButtons button:hover {
   width: 100%;
   overflow: auto;
   background: rgba(0, 0, 0, 0.5);
+}
+.math_books li .modal-content {
+  background: #f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0.17);
+  animation-name: modalOpen;
+  animation-duration: 1s;
+}
+.math_books li .closeBtn {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+}
+.math_books li .closeBtn:hover,
+.math_books li .closeBtn:focus {
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+}
+@keyframes modalOpen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .math-backdrop {
   position: fixed;

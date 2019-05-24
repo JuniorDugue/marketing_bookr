@@ -76,6 +76,43 @@ window.onscroll = function() {
   }
 }
 
+
+// js for the modal section
+const modal = document.querySelectorAll(".simpleModal")[0];
+
+// get open modal button when add button is clicked
+const modalBtn = document.querySelectorAll(".modalBtn")[0];
+
+// get close btn to close modal when x is clicked
+const closeBtn = document.querySelectorAll(".closeBtn")[0];
+
+// listening for open click
+modalBtn.addEventListener("click", openModal);
+
+// listening for close click
+closeBtn.addEventListener("click", closeModal);
+
+// listening for outside click
+window.addEventListener("click", clickOutside);
+
+// function to open the modal
+function openModal(){
+  // console.log("testing");
+  modal.style.display = "block";
+}
+
+// function to close the modal
+function closeModal(){
+  modal.style.display = "none";
+}
+
+// function to close the modal if clicked outside the modal for better UX
+function clickOutside(e){
+  if(e.target == modal){
+  modal.style.display = "none";
+  }
+}
+
 typingH3(); 
 typingH4();
 onMathImageClick();
