@@ -9,7 +9,7 @@
 
 //Escaping
 @mobile: ~"(max-width: 750px)";
-@tablet: ~"(max-width: 800px)";
+@tablet: ~"(max-width: 1000px)";
 
 //
 .custom-layout(@justify: space-between, @align: center){
@@ -17,3 +17,23 @@
     justify-content: @justify;
     align-items: @align;
 }
+
+.width-100 {
+    width: 100%;
+  }
+  
+  .border-bottom-grey {
+    border-bottom: 1px solid @teal;
+  }
+  
+  .flex(@jc: none, @ai: none, @dir: row) {
+    display: flex;
+    justify-content: @jc;
+    align-items: @ai;
+    flex-direction: @dir;
+  }
+  @lambda-times-color-primary: #333;
+@lambda-times-color-white: #fff;
+@lambda-times-color-black: #000;
+@lambda-times-color-lightgrey: lightgrey;
+@lambda-times-color-background: #f1f1f1;
