@@ -200,9 +200,6 @@ header nav a:hover {
   text-decoration: none;
   border-radius: 5px;
 }
-header nav a:last-child {
-  margin-bottom: 5%;
-}
 header nav .navButtons button {
   margin: 0 auto;
   font-size: 2rem;
