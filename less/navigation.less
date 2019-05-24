@@ -16,19 +16,26 @@ header{
            }
            
            
+           
             
             @media @mobile{
                display: flex;
                flex-direction: column;
                justify-content: center;
                align-items: center;
-               width: 100%
+               width: 100%;
+              
+            
             }
             
             a{
+                @media @tablet {
+                    font-size: 1.5rem;
+                }
                 @media @mobile{
                     font-size: 2rem;
                     margin-top: 3%;
+                    // display: none;
                     
                 }
                 font-size: 2rem;
@@ -64,6 +71,9 @@ header{
                      background: white;
                      color: #00CBD1;
                  }
+                 @media @tablet {
+                    font-size: 1.5rem;
+                }
                  @media @mobile{
                      display: block;
                      margin-bottom: 10%;
@@ -123,4 +133,16 @@ header{
     }
    
     
+}
+.toggle{
+    position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+  display: none;
+  @media @mobile {
+    display: block;
+  }
+}
+.active{
+    display: block;
 }
